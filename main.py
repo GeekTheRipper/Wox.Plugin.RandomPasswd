@@ -66,7 +66,7 @@ class Shadowsocks(Wox):
         res.append({
             "Title": "生成 {} 位随机密码到剪贴板（随机数）".format(digits[3]),
             "IcoPath":"randpass4.png",
-            "JsonRPCAction":{"method": "generate_random_passwd", "parameters": [digits[3],False,False,True]}
+            "JsonRPCAction":{"method": "generate_random_passwd", "parameters": [digits[3],False,True,False]}
             })
         if not query:
             res.append({
